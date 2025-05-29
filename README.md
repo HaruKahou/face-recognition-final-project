@@ -1,69 +1,24 @@
 # Facial Emotion, Age & Gender Detection
 
-## Mục lục
-- [Giới thiệu](#giới-thiệu)
-- [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
-- [Cách tải dữ liệu](#cách-tải-dữ-liệu)
-- [Hướng dẫn train mô hình](#hướng-dẫn-train-mô-hình)
-- [Inference/Dự đoán](#inferencedự-đoán)
-- [Tham khảo](#tham-khảo)
-
----
-
-## Giới thiệu
-
-Repository này bao gồm các notebook & code cho các bài toán:
-- Nhận diện cảm xúc khuôn mặt sử dụng CNNs.
-- Nhận diện tuổi và giới tính từ ảnh khuôn mặt.
-
-## Yêu cầu hệ thống
-
+## Các yêu cầu cần có:
 - Python >= 3.8
 - Các thư viện: numpy, pandas, matplotlib, opencv-python, tensorflow, keras, scikit-learn, scikit-image, tqdm, pillow, seaborn, v.v.
-
-Cài đặt nhanh bằng lệnh:
-```bash
-pip install -r requirements.txt
-```
-> Nếu không có sẵn file `requirements.txt`, bạn có thể cài đặt các thư viện chính bằng:
-```bash
-pip install numpy pandas matplotlib opencv-python tensorflow keras scikit-learn scikit-image tqdm pillow seaborn
-```
-
----
 
 ## Cách tải dữ liệu
 
 ### 1. Dữ liệu nhận diện cảm xúc khuôn mặt (Emotion Recognition)
-- Sử dụng tập dữ liệu [FER2013](https://www.kaggle.com/datasets/msambare/fer2013)
-- Sau khi tải về, giải nén dữ liệu vào thư mục theo cấu trúc như sau:
-```
-face-recognition-final-project/
-├── archive/
-│   ├── train/
-│   │   ├── angry/
-│   │   ├── disgust/
-│   │   ├── fear/
-│   │   ├── happy/
-│   │   ├── neutral/
-│   │   ├── sad/
-│   │   └── surprise/
-│   └── test/
-│       ├── angry/
-│       ├── disgust/
-│       ├── ...
-```
+- Sử dụng tập dữ liệu (https://www.kaggle.com/datasets/msambare/fer2013)
+- Sau khi tải về, giải nén dữ liệu. 
 - Đường dẫn mặc định của notebook:  
   `C:/Users/PC/Downloads/Detai_TGMT_1/archive/train/`  
-  Hãy chỉnh sửa lại biến `train_data_path`, `test_data_path` trong notebook cho phù hợp với đường dẫn của bạn, hoặc đặt dữ liệu đúng vị trí.
+  Hãy chỉnh sửa lại biến `train_data_path`, `test_data_path` trong notebook cho phù hợp với đường dẫn mà bạn đang lưu, hoặc đặt dữ liệu đúng vị trí.
 
 ### 2. Dữ liệu nhận diện tuổi & giới tính (UTKFace)
-- Link: [UTKFace dataset](https://susanqq.github.io/UTKFace/)
+- Link: (https://susanqq.github.io/UTKFace/)
 - Sau khi tải về, giải nén vào:  
   `C:/Users/PC/Downloads/Detai_TGMT/UTKFace/`
 - Có thể đổi lại đường dẫn trong notebook cho phù hợp.
 
----
 
 ## Hướng dẫn train mô hình
 
@@ -96,13 +51,12 @@ face-recognition-final-project/
 
 ---
 
-## Inference/Dự đoán
-
+## Inference
 ### 1. Với mô hình cảm xúc
 
-- Sau khi train xong, có thể sử dụng hàm/đoạn code sau (ví dụ):
+- Sau khi train xong, có thể sử dụng hàm/đoạn code sau:
 
-```python
+```
 from tensorflow.keras.models import load_model
 import cv2
 import numpy as np
