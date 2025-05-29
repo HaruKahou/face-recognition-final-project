@@ -19,7 +19,6 @@ pip install -r requirements.txt
 
 - **Bộ dữ liệu:** [UTKFace](https://susanqq.github.io/UTKFace/)
 - **Cách tải:**
-    - Truy cập [link này](https://susanqq.github.io/UTKFace/).
     - Tải file zip về, giải nén ra thư mục, ví dụ: `C:/Users/PC/Downloads/Detai_TGMT/UTKFace`
     - Đảm bảo các file ảnh `.jpg` nằm trong thư mục này.
 
@@ -78,18 +77,6 @@ pip install -r requirements.txt
 
 ---
 
-## 5. Một số lưu ý
-
-- Các file `.ipynb` nên chạy trên môi trường Jupyter Notebook hoặc Google Colab.
-- Đảm bảo các thư mục dữ liệu đúng cấu trúc và đường dẫn trong mã nguồn.
-- Nếu gặp lỗi thiếu thư viện, hãy kiểm tra lại các package đã cài đặt.
-- Khi chạy trên Windows, chú ý đường dẫn phân tách bằng dấu `\\` hoặc dùng raw string `r"..."`.
-
----
-
-## 6. Tác giả & Đóng góp
-
-- Dự án thực hiện bởi [HaruKahou](https://github.com/HaruKahou) & team.
 - Đóng góp ý kiến, báo lỗi hoặc pull request đều được hoan nghênh!
 
 ---
