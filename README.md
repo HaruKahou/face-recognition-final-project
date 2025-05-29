@@ -86,9 +86,4 @@ print("Emotion:", emotion)
 
 ---
 
-## Tham khảo
 
-- [FER2013 Kaggle](https://www.kaggle.com/datasets/msambare/fer2013)
-- [UTKFace Dataset](https://susanqq.github.io/UTKFace/)
-- [Keras Documentation](https://keras.io/)
-- [OpenCV Documentation](https://docs.opencv.org/)
